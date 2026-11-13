@@ -1,0 +1,13 @@
+node_modules
+.nuxt
+.output
+dist
+.git
+.gitignore
+.playwright-mcp
+docs
+plans
+*.log
+.env
+.env.*
+!.env.example

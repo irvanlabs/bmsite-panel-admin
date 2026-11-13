@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bmsite-panel-admin",
+  "compatibility_date": "2026-09-03",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./dist/_worker.js/index.js",
+  "vars": {
+    "NUXT_API_BASE": "https://dev-api.situsmudah.id/api/v1"
+  },
+  "env": {
+    "dev": {
+      "name": "bmsite-panel-admin-dev",
+      "vars": {
+        "NUXT_API_BASE": "https://dev-api.situsmudah.id/api/v1"
+      }
+    },
+    "admin": {
+      "name": "bmsite-panel-admin",
+      "vars": {
+        "NUXT_API_BASE": "https://dev-api.situsmudah.id/api/v1"
+      }
+    }
+  },
+  // NOTE: deploy langsung dari repo root (tanpa redirect .wrangler),
+  // jadi path di bawah relatif terhadap root. Copy di
+  // dist/_worker.js/wrangler.json tidak dipakai.
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
