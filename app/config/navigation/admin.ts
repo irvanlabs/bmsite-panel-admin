@@ -16,6 +16,7 @@ export const adminNav: NavMenu[] = [
     items: [
       { title: 'Transaksi', icon: 'i-lucide-credit-card', link: '/admin/billings' },
       { title: 'Tagihan', icon: 'i-lucide-receipt-text', link: '/admin/invoices' },
+      { title: 'Kupon', icon: 'i-lucide-ticket-percent', link: '/admin/coupons' },
       { title: 'Penarikan', icon: 'i-lucide-banknote', link: '/admin/withdrawals' },
       { title: 'Website', icon: 'i-lucide-globe', link: '/admin/websites' },
       { title: 'Template', icon: 'i-lucide-layers', link: '/admin/templates' },
